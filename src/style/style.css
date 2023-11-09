@@ -1,0 +1,92 @@
+span.spin {
+  display: block;
+  animation: spin_words 6s infinite;
+}
+
+@keyframes spin_words {
+  25% {
+    transform: translateY(-100%);
+  }
+}
+.inner {
+  overflow: hidden;
+  height: 110px;
+}
+
+.outer {
+  display: flex;
+}
+
+.inner span {
+  position: relative;
+  animation: animation 10s ease infinite;
+}
+
+@keyframes animation {
+  0%,
+  100% {
+    top: 0;
+  }
+  20% {
+    top: 0;
+  }
+  25% {
+    top: 0px;
+  }
+  45% {
+    top: -143px;
+  }
+  50% {
+    top: -143px;
+  }
+  70% {
+    top: -143px;
+  }
+  75% {
+    top: -143px;
+  }
+  95 {
+    top: -143px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .inner {
+    overflow: hidden;
+    height: 69px;
+  }
+
+  @keyframes spin_words {
+    25% {
+      transform: translateY(-50%);
+    }
+  }
+
+  @keyframes animation {
+    0%,
+    100% {
+      top: 0;
+    }
+    20% {
+      top: 0;
+    }
+    25% {
+      top: 0px;
+    }
+    45% {
+      top: -73px;
+    }
+    50% {
+      top: -73px;
+    }
+    70% {
+      top: -73px;
+    }
+    75% {
+      top: -73px;
+    }
+    95 {
+      top: -73px;
+    }
+  }
+}
